@@ -20,8 +20,6 @@ ARGV.each do |arg|
         if result[i] < i_arg
             i += 1
         else
-            # The parameters must be on result.insert(i, i_arg)
-            # and not i - 1 for insert at i position, before the first bigger caractère
             result.insert(i, i_arg)
             is_inserted = true
             break
